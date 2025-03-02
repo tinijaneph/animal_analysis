@@ -893,7 +893,7 @@ with tab4:
             - '{top_danger}' is the strongest indicator of danger with {relative_risk:.1f}x higher risk and a {danger_rate:.1%} danger rate when present
             - {high_risk_symptoms} symptoms show at least 2x higher risk of danger when present
             - This species shows a unique symptom profile that requires targeted monitoring{heatmap_insight}
-            """)
+            """, unsafe_allow_html=True)
         else:
             st.markdown(f"""
             #### Observations for {selected_species_tab4}:
