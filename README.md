@@ -34,8 +34,6 @@ Our exploration is guided by the following key questions:
 - **Species-Specific Insights**: Detailed reports on health risks for different species.
 - **Symptom Correlation Analysis**: Understanding how symptom combinations relate to dangerous conditions.
 
-## 📜 License
-
 ## 🙏 Acknowledgments
 
 - **Dataset Source**: [Animal Condition Classification Dataset](https://www.kaggle.com/datasets/gracehephzibahm/animal-disease)
