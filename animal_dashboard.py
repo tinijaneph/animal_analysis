@@ -408,31 +408,13 @@ with tab2:
         )
         
         st.plotly_chart(fig, use_container_width=True)
-        if not corr_data.empty:
-            avg_corr = corr_data['Correlation'].mean()
-            max_corr = corr_data['Correlation'].max()
-            min_corr = corr_data['Correlation'].min()
-            max_species = corr_data.loc[corr_data['Correlation'].idxmax(), 'AnimalName']
-            min_species = corr_data.loc[corr_data['Correlation'].idxmin(), 'AnimalName']
-            
-            correlation_interpretation = "weak" if abs(avg_corr) < 0.3 else "moderate" if abs(avg_corr) < 0.6 else "strong"
-            
-            st.markdown(f"""
-            #### Interpretation:
-            - The average correlation coefficient is **{avg_corr:.2f}**, indicating a **{correlation_interpretation} {'' if avg_corr == 0 else 'positive' if avg_corr > 0 else 'negative'} relationship** between symptom count and danger across all species
-            - **{max_species}** shows the strongest positive correlation ({max_corr:.2f}), where more symptoms generally indicate higher danger
-            - **{min_species}** shows the strongest negative correlation ({min_corr:.2f}), where more symptoms actually correlate with lower danger
-            - The variation across species suggests that symptom count alone is not a reliable universal predictor of danger
-            - Focus should be on **specific symptoms** or combinations, as they may be more predictive than total symptom count
-            """)
-        else:
-            st.markdown("""
-            #### Interpretation:
-            - The correlation coefficient indicates the relationship between symptom count and danger
-            - A value near zero suggests no linear relationship between symptom count and danger
-            - This means that having more symptoms does not necessarily increase the likelihood of a dangerous condition
-            - Further analysis should focus on specific symptoms or combinations rather than just symptom count
-            """)
+        st.markdown("""
+        #### Interpretation:
+        - The correlation coefficient indicates the relationship between symptom count and danger
+        - A value near zero suggests no linear relationship between symptom count and danger
+        - This means that having more symptoms does not necessarily increase the likelihood of a dangerous condition
+        - Further analysis should focus on specific symptoms or combinations rather than just symptom count
+        """)
     else:
         st.warning("No data available for symptom-danger correlation.")
     
