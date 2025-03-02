@@ -1,0 +1,902 @@
+Combination,CombinationType,Count,DangerousCount,DangerRate
+Pains,Single,99,99,1.0
+Lethargy,Single,83,83,1.0
+Death,Single,76,76,1.0
+Vomiting,Single,71,71,1.0
+Fever + Diarrhea,Pair,52,52,1.0
+Fever + Coughing,Pair,49,49,1.0
+Lameness,Single,42,42,1.0
+Diarrhea + Vomiting,Pair,38,38,1.0
+Fever + Depression,Pair,36,36,1.0
+Death + Pains,Pair,32,32,1.0
+Fever + Lethargy,Pair,30,30,1.0
+Swelling,Single,28,28,1.0
+Blindness,Single,24,24,1.0
+Dyspnea,Single,24,24,1.0
+Fever + Anorexia,Pair,23,23,1.0
+Coughing + Weight loss,Pair,22,22,1.0
+Fever + Pains,Pair,22,22,1.0
+Malpresentation,Single,22,22,1.0
+drooling,Single,22,22,1.0
+Fetopelvic dispropotion,Single,21,21,1.0
+Fetopelvic dispropotion + Death,Pair,21,21,1.0
+Fetopelvic dispropotion + Death + Pains,Triplet,21,21,1.0
+Fetopelvic dispropotion + Pains,Pair,21,21,1.0
+Fetopelvic dispropotion + Uteria inertia,Pair,21,21,1.0
+Fetopelvic dispropotion + Uteria inertia + Death,Triplet,21,21,1.0
+Fetopelvic dispropotion + Uteria inertia + Pains,Triplet,21,21,1.0
+Fever + Vomiting,Pair,21,21,1.0
+Uteria inertia,Single,21,21,1.0
+Uteria inertia + Death,Pair,21,21,1.0
+Uteria inertia + Death + Pains,Triplet,21,21,1.0
+Uteria inertia + Pains,Pair,21,21,1.0
+Vomiting + Weight loss,Pair,21,21,1.0
+Malpresentation + Death,Pair,20,20,1.0
+listlessness,Single,20,20,1.0
+stumbling,Single,20,20,1.0
+stumbling + drooling,Pair,20,20,1.0
+wasting,Single,20,20,1.0
+wasting + drooling,Pair,20,20,1.0
+wasting + stumbling,Pair,20,20,1.0
+wasting + stumbling + drooling,Triplet,20,20,1.0
+Loss of  appetite,Single,19,19,1.0
+Dullness,Single,18,18,1.0
+Fetopelvic dispropotion + Malpresentation,Pair,18,18,1.0
+Fetopelvic dispropotion + Malpresentation + Death,Triplet,18,18,1.0
+Fetopelvic dispropotion + Malpresentation + Pains,Triplet,18,18,1.0
+Fetopelvic dispropotion + Uteria inertia + Malpresentation,Triplet,18,18,1.0
+Fever + Diarrhea + Vomiting,Triplet,18,18,1.0
+Malpresentation + Death + Pains,Triplet,18,18,1.0
+Malpresentation + Pains,Pair,18,18,1.0
+Uteria inertia + Malpresentation,Pair,18,18,1.0
+Uteria inertia + Malpresentation + Death,Triplet,18,18,1.0
+Uteria inertia + Malpresentation + Pains,Triplet,18,18,1.0
+listlessness + drooling,Pair,18,18,1.0
+stumbling + listlessness,Pair,18,18,1.0
+stumbling + listlessness + drooling,Triplet,18,18,1.0
+wasting + listlessness,Pair,18,18,1.0
+wasting + listlessness + drooling,Triplet,18,18,1.0
+wasting + stumbling + listlessness,Triplet,18,18,1.0
+Coughing + Lethargy,Pair,17,17,1.0
+Hair loss,Single,17,17,1.0
+Coughing + Anorexia,Pair,16,16,1.0
+Diarrhea + Coughing,Pair,16,16,1.0
+Dyspnea + Coughing,Pair,16,16,1.0
+fever,Single,16,16,1.0
+Fever + Nasal Discharge,Pair,15,15,1.0
+Fever + Sneezing,Pair,15,15,1.0
+Weight loss + Anorexia,Pair,15,15,1.0
+Fever + Death,Pair,14,14,1.0
+Fever + Diarrhea + Weight loss,Triplet,14,14,1.0
+Fever + Lameness,Pair,14,14,1.0
+Jaundice,Single,14,14,1.0
+Loss of Appetite,Single,14,14,1.0
+Vomiting + Dehydration,Pair,14,14,1.0
+depression,Single,14,14,1.0
+fever + depression,Pair,14,14,1.0
+Nausea,Single,13,13,1.0
+Seizures,Single,13,13,1.0
+Staggering,Single,13,13,1.0
+Chills,Single,12,12,1.0
+Convulsion,Single,12,12,1.0
+Coughing + Sneezing,Pair,12,12,1.0
+Diarrhea + Death,Pair,12,12,1.0
+Emaciation,Single,12,12,1.0
+Fever + Chills,Pair,12,12,1.0
+Fever + Dehydration,Pair,12,12,1.0
+Fever + Difficulty in breathing,Pair,12,12,1.0
+Fever + Loss of appetite,Pair,12,12,1.0
+Fever + Weakness,Pair,12,12,1.0
+drooling + urination problem,Pair,12,12,1.0
+dull ness,Single,12,12,1.0
+fever + loss of appetite,Pair,12,12,1.0
+fever + loss of appetite + depression,Triplet,12,12,1.0
+listlessness + drooling + urination problem,Triplet,12,12,1.0
+listlessness + urination problem,Pair,12,12,1.0
+loss of appetite + depression,Pair,12,12,1.0
+stumbling + drooling + urination problem,Triplet,12,12,1.0
+stumbling + listlessness + urination problem,Triplet,12,12,1.0
+stumbling + urination problem,Pair,12,12,1.0
+urination problem,Single,12,12,1.0
+wasting + drooling + urination problem,Triplet,12,12,1.0
+wasting + listlessness + urination problem,Triplet,12,12,1.0
+wasting + stumbling + urination problem,Triplet,12,12,1.0
+wasting + urination problem,Pair,12,12,1.0
+Fever + Coughing + Lethargy,Triplet,11,11,1.0
+Poor Appetite,Single,11,11,1.0
+Respiratory distress,Single,11,11,1.0
+Depression + Anorexia,Pair,10,10,1.0
+Diarrhea + Vomiting + Dehydration,Triplet,10,10,1.0
+Diarrhea + Vomiting + Weight loss,Triplet,10,10,1.0
+Difficulty in breathing + Coughing,Pair,10,10,1.0
+Dyspnea + Anorexia,Pair,10,10,1.0
+Fatique,Single,10,10,1.0
+Fever + Coughing + Anorexia,Triplet,10,10,1.0
+Fever + Coughing + Sneezing,Triplet,10,10,1.0
+Fever + Dullness,Pair,10,10,1.0
+Fever + Dyspnea,Pair,10,10,1.0
+Fever + loss of appetite,Pair,10,10,1.0
+Nasal discharge,Single,10,10,1.0
+Pneumonia ,Single,10,10,1.0
+Swollen,Single,10,10,1.0
+Wasting,Single,10,10,1.0
+Weight Loss,Single,10,10,1.0
+sudden death,Single,10,10,1.0
+Ataxia,Single,9,9,1.0
+Coughing + Depression,Pair,9,9,1.0
+Depression + Pains,Pair,9,9,1.0
+Diarrhea + Lethargy,Pair,9,9,1.0
+Difficulty breathing,Single,9,9,1.0
+Fever + Difficulty breathing,Pair,9,9,1.0
+Fever + Respiratory distress,Pair,9,9,1.0
+Fever + Swelling,Pair,9,9,1.0
+Sudden death,Single,9,9,1.0
+Vomiting + Anorexia,Pair,9,9,1.0
+change their normal behaviour,Single,9,9,1.0
+diarrhea,Single,9,9,1.0
+Colic,Single,8,8,1.0
+Diarrhea + Coughing + Weight loss,Triplet,8,8,1.0
+Diarrhea + Nausea,Pair,8,8,1.0
+Diarrhea + Vomiting + Pain,Triplet,8,8,1.0
+Dyspnea + Coughing + Anorexia,Triplet,8,8,1.0
+Facial edema,Single,8,8,1.0
+Fever + Diarrhea + Coughing,Triplet,8,8,1.0
+Fever + Tiredness,Pair,8,8,1.0
+Lameness + Weight loss,Pair,8,8,1.0
+Lethargy + Anorexia,Pair,8,8,1.0
+Lethargy + Nasal Discharge,Pair,8,8,1.0
+Lethargy + Weight loss,Pair,8,8,1.0
+Seizuers,Single,8,8,1.0
+Swelling ,Single,8,8,1.0
+Tiredness,Single,8,8,1.0
+Vomiting + Pain,Pair,8,8,1.0
+difficulty breating,Single,8,8,1.0
+drooling + drooping ears,Pair,8,8,1.0
+drooping ears,Single,8,8,1.0
+fever + lameness in affected leg,Pair,8,8,1.0
+fever + lameness in affected leg + depression,Triplet,8,8,1.0
+fever + loss of appetite + lameness in affected leg,Triplet,8,8,1.0
+high temperature,Single,8,8,1.0
+high temperature + trembling,Pair,8,8,1.0
+lameness in affected leg,Single,8,8,1.0
+lameness in affected leg + depression,Pair,8,8,1.0
+loss of appetite + lameness in affected leg,Pair,8,8,1.0
+loss of appetite + lameness in affected leg + depression,Triplet,8,8,1.0
+rapid pulse and heart rates,Single,8,8,1.0
+stumbling + drooling + drooping ears,Triplet,8,8,1.0
+stumbling + drooping ears,Pair,8,8,1.0
+sudden death + high temperature,Pair,8,8,1.0
+sudden death + high temperature + trembling,Triplet,8,8,1.0
+sudden death + trembling,Pair,8,8,1.0
+trembling,Single,8,8,1.0
+wasting + drooling + drooping ears,Triplet,8,8,1.0
+wasting + drooping ears,Pair,8,8,1.0
+wasting + stumbling + drooping ears,Triplet,8,8,1.0
+Abdominal pain,Single,7,7,1.0
+Abortion,Single,7,7,1.0
+Bloody,Single,7,7,1.0
+Fever + Poor Appetite,Pair,7,7,1.0
+Fever + Weight loss + Anorexia,Triplet,7,7,1.0
+Head ache,Single,7,7,1.0
+Limping,Single,7,7,1.0
+Loss of appettite,Single,7,7,1.0
+Neurologic abnormalities,Single,7,7,1.0
+Painfull,Single,7,7,1.0
+Painfull + Nasal Discharge,Pair,7,7,1.0
+Stiffness,Single,7,7,1.0
+Swelling + Death,Pair,7,7,1.0
+Swelling + Lameness,Pair,7,7,1.0
+Vomiting + Lethargy,Pair,7,7,1.0
+Weight loss + Pains,Pair,7,7,1.0
+change their normal behaviour + Pains,Pair,7,7,1.0
+stop drinking,Single,7,7,1.0
+stop drinking + Pains,Pair,7,7,1.0
+stop drinking + change their normal behaviour,Pair,7,7,1.0
+stop drinking + change their normal behaviour + Pains,Triplet,7,7,1.0
+stop eating,Single,7,7,1.0
+stop eating + Pains,Pair,7,7,1.0
+stop eating + change their normal behaviour,Pair,7,7,1.0
+stop eating + change their normal behaviour + Pains,Triplet,7,7,1.0
+stop eating + stop drinking,Pair,7,7,1.0
+stop eating + stop drinking + Pains,Triplet,7,7,1.0
+stop eating + stop drinking + change their normal behaviour,Triplet,7,7,1.0
+weakness,Single,7,7,1.0
+Blindness + Pains,Pair,6,6,1.0
+Bloody discharge,Single,6,6,1.0
+Chest Pain,Single,6,6,1.0
+Circling,Single,6,6,1.0
+Congestion,Single,6,6,1.0
+Constipation,Single,6,6,1.0
+Depression + Weakness,Pair,6,6,1.0
+Diarrhea + Anemia,Pair,6,6,1.0
+Diarrhea + Weight loss + Dehydration,Triplet,6,6,1.0
+Difficulty in breathing + Lethargy,Pair,6,6,1.0
+Discomfort,Single,6,6,1.0
+Dullness + Pains,Pair,6,6,1.0
+Dyspnea + Coughing + Lethargy,Triplet,6,6,1.0
+Dyspnea + Difficulty in breathing,Pair,6,6,1.0
+Dyspnea + Lethargy,Pair,6,6,1.0
+Emaciation + Diarrhea,Pair,6,6,1.0
+Eye redness,Single,6,6,1.0
+Fatigue,Single,6,6,1.0
+Fever + Chest Pain,Pair,6,6,1.0
+Fever + Diarrhea + Dehydration,Triplet,6,6,1.0
+Fever + Diarrhea + Pain,Triplet,6,6,1.0
+Fever + Difficulty in breathing + Coughing,Triplet,6,6,1.0
+Fever + Dullness + Pains,Triplet,6,6,1.0
+Fever + Dyspnea + Anorexia,Triplet,6,6,1.0
+Fever + Dyspnea + Coughing,Triplet,6,6,1.0
+Fever + Fatique,Pair,6,6,1.0
+Fever + Lethargy + Pain,Triplet,6,6,1.0
+Fever + Loss of  appetite,Pair,6,6,1.0
+Fever + Muscle aches,Pair,6,6,1.0
+Fever + Rhinorrhea,Pair,6,6,1.0
+Fever + Rhinorrhea + Coughing,Triplet,6,6,1.0
+Fever + Salivation,Pair,6,6,1.0
+Fever + Vomiting + Dehydration,Triplet,6,6,1.0
+Fever + Wasting,Pair,6,6,1.0
+Fever + Weight Loss,Pair,6,6,1.0
+Headache,Single,6,6,1.0
+Lack of coordination,Single,6,6,1.0
+Lesions in the nasal cavity + Lesions on nose,Pair,6,6,1.0
+Lesions on nose,Single,6,6,1.0
+Lethargy + Pain,Pair,6,6,1.0
+Loss of  appetite + Weight loss,Pair,6,6,1.0
+Loss of appetite + Death,Pair,6,6,1.0
+Loss of appetite + Pains,Pair,6,6,1.0
+Mortality,Single,6,6,1.0
+Muscle aches,Single,6,6,1.0
+Muscle pain,Single,6,6,1.0
+Reduce growth,Single,6,6,1.0
+Restlessness,Single,6,6,1.0
+Rhinorrhea,Single,6,6,1.0
+Rhinorrhea + Coughing,Pair,6,6,1.0
+Salivation,Single,6,6,1.0
+Scabs,Single,6,6,1.0
+Skin Rashes,Single,6,6,1.0
+Swelling + Pain,Pair,6,6,1.0
+Swelling + Pains,Pair,6,6,1.0
+Tenderness,Single,6,6,1.0
+Upset stomach,Single,6,6,1.0
+Vomitting,Single,6,6,1.0
+Weight loss + Death,Pair,6,6,1.0
+Weight loss + Dehydration,Pair,6,6,1.0
+Weight loss + Nasal Discharge,Pair,6,6,1.0
+Wheezing,Single,6,6,1.0
+cough ,Single,6,6,1.0
+difficulty breating + trembling,Pair,6,6,1.0
+difficulty swallowing,Single,6,6,1.0
+droopy wings,Single,6,6,1.0
+extending its neck,Single,6,6,1.0
+fever + loss of appetite + rapid pulse and heart rates,Triplet,6,6,1.0
+fever + rapid pulse and heart rates,Pair,6,6,1.0
+fever + rapid pulse and heart rates + depression,Triplet,6,6,1.0
+fever + rapid pulse and heart rates + lameness in affected leg,Triplet,6,6,1.0
+gasping for air,Single,6,6,1.0
+gasping for air + gasping for breath,Pair,6,6,1.0
+gasping for breath,Single,6,6,1.0
+high temperature + difficulty breating,Pair,6,6,1.0
+high temperature + difficulty breating + trembling,Triplet,6,6,1.0
+lathargy,Single,6,6,1.0
+listlessness + drooling + drooping ears,Triplet,6,6,1.0
+listlessness + drooping ears,Pair,6,6,1.0
+loss of appetite + Weakness,Pair,6,6,1.0
+loss of appetite + diarrhea,Pair,6,6,1.0
+loss of appetite + rapid pulse and heart rates,Pair,6,6,1.0
+loss of appetite + rapid pulse and heart rates + depression,Triplet,6,6,1.0
+loss of appetite + rapid pulse and heart rates + lameness in affected leg,Triplet,6,6,1.0
+nasal discharge,Single,6,6,1.0
+rapid pulse and heart rates + depression,Pair,6,6,1.0
+rapid pulse and heart rates + lameness in affected leg,Pair,6,6,1.0
+rapid pulse and heart rates + lameness in affected leg + depression,Triplet,6,6,1.0
+stumbling + listlessness + drooping ears,Triplet,6,6,1.0
+sudden death + difficulty breating,Pair,6,6,1.0
+sudden death + difficulty breating + trembling,Triplet,6,6,1.0
+sudden death + high temperature + difficulty breating,Triplet,6,6,1.0
+wasting + listlessness + drooping ears,Triplet,6,6,1.0
+Coughing + Pains,Pair,5,5,1.0
+Enlarged lymph nodes,Single,5,5,1.0
+Fever + Abortion,Pair,5,5,1.0
+Fever + Depression + Pains,Triplet,5,5,1.0
+Fever + Diarrhea + Lethargy,Triplet,5,5,1.0
+Fever + Joint Pain,Pair,5,5,1.0
+Fever + Seizures,Pair,5,5,1.0
+Fever + Staggering,Pair,5,5,1.0
+Fever + Sudden death,Pair,5,5,1.0
+Heat,Single,5,5,1.0
+Joint Pain,Single,5,5,1.0
+Lameness + Pains,Pair,5,5,1.0
+Lession on the skin,Single,5,5,1.0
+Lethargy + Sneezing,Pair,5,5,1.0
+Loss of  appetite + Coughing,Pair,5,5,1.0
+Loss of  appetite + Lameness,Pair,5,5,1.0
+Runny nose,Single,5,5,1.0
+Runny nose + Loss of appettite,Pair,5,5,1.0
+Skin issue,Single,5,5,1.0
+Swelling + Weight loss,Pair,5,5,1.0
+Swelling of face or leg,Single,5,5,1.0
+Swelling on leg,Single,5,5,1.0
+Swelling on leg + Nasal Discharge,Pair,5,5,1.0
+Swelling on leg + Painfull + Nasal Discharge,Triplet,5,5,1.0
+Ulcers,Single,5,5,1.0
+Vomiting + Nausea,Pair,5,5,1.0
+Abdominal discomfort,Single,4,4,1.0
+Abdonormal pain,Single,4,4,1.0
+Aneamia,Single,4,4,1.0
+Anorexia + Weight Loss,Pair,4,4,1.0
+Bad smell,Single,4,4,1.0
+Behaviour change,Single,4,4,1.0
+Blood from mouth,Single,4,4,1.0
+Bottle jaw,Single,4,4,1.0
+Chills + Chest Pain,Pair,4,4,1.0
+Chills + Retarded Growth + Chest Pain,Triplet,4,4,1.0
+Circling + Blindness,Pair,4,4,1.0
+Convulsion + Weight loss,Pair,4,4,1.0
+Coughing + Anemia,Pair,4,4,1.0
+Coughing + Death,Pair,4,4,1.0
+Coughing + Depression + Anorexia,Triplet,4,4,1.0
+Coughing + Dyspnea,Pair,4,4,1.0
+Coughing + Fatique,Pair,4,4,1.0
+Coughing + Joint Pain,Pair,4,4,1.0
+Coughing + Lethargy + Nasal Discharge,Triplet,4,4,1.0
+Coughing + Pain,Pair,4,4,1.0
+Coughing + Seizures,Pair,4,4,1.0
+Coughing + Vomiting,Pair,4,4,1.0
+Coughing + Weight loss + Nasal Discharge,Triplet,4,4,1.0
+Crusty,Single,4,4,1.0
+Death + Coughing,Pair,4,4,1.0
+Death + Pain,Pair,4,4,1.0
+Death + Weakness,Pair,4,4,1.0
+Death + Weight loss,Pair,4,4,1.0
+Decrease appetite,Single,4,4,1.0
+Dehydration + Pains,Pair,4,4,1.0
+Dehydration + Weight loss,Pair,4,4,1.0
+Depression + Colic,Pair,4,4,1.0
+Depression + Death,Pair,4,4,1.0
+Depression + Salivation,Pair,4,4,1.0
+Depression + Weight loss + Anorexia,Triplet,4,4,1.0
+Depression + loss of appetite,Pair,4,4,1.0
+Diarrhea + Abdominal discomfort,Pair,4,4,1.0
+Diarrhea + Colic,Pair,4,4,1.0
+Diarrhea + Coughing + Lethargy,Triplet,4,4,1.0
+Diarrhea + Dehydration + Weight loss,Triplet,4,4,1.0
+Diarrhea + Depression,Pair,4,4,1.0
+Diarrhea + Muscle pain,Pair,4,4,1.0
+Diarrhea + Poor Appetite,Pair,4,4,1.0
+Diarrhea + Pot belly,Pair,4,4,1.0
+Diarrhea + Shock,Pair,4,4,1.0
+Diarrhea + Vomiting + Anorexia,Triplet,4,4,1.0
+Diarrhea + Vomiting + Nausea,Triplet,4,4,1.0
+Diarrhea + Weight loss + Anemia,Triplet,4,4,1.0
+Diarrhea + Weight loss + Death,Triplet,4,4,1.0
+Diarrhea + loss of appetite,Pair,4,4,1.0
+Difficulty breathing + Coughing,Pair,4,4,1.0
+Difficulty in Swallowing,Single,4,4,1.0
+Difficulty in breathing + Coughing + Sneezing,Triplet,4,4,1.0
+Difficulty in breathing + Neurologic abnormalities,Pair,4,4,1.0
+Difficulty in breathing + Sneezing,Pair,4,4,1.0
+Difficulty in breathing + Weakness,Pair,4,4,1.0
+Discharge,Single,4,4,1.0
+Discharge from eye,Single,4,4,1.0
+Discomfort + Pains,Pair,4,4,1.0
+Dullness + Skin Rashes,Pair,4,4,1.0
+Dullness + Skin Rashes + Pains,Triplet,4,4,1.0
+Dyspnea + Coughing + Depression,Triplet,4,4,1.0
+Dyspnea + Coughing + Difficulty in breathing,Triplet,4,4,1.0
+Dyspnea + Depression,Pair,4,4,1.0
+Dyspnea + Depression + Anorexia,Triplet,4,4,1.0
+Dyspnea + Pain,Pair,4,4,1.0
+Dyspnea + Sneezing,Pair,4,4,1.0
+Dyspnea + Sneezing + Coughing,Triplet,4,4,1.0
+Dyspnea + Sneezing + Difficulty in breathing,Triplet,4,4,1.0
+Edema in lower jaw,Single,4,4,1.0
+Edema in lower jaw + Anemia,Pair,4,4,1.0
+Emaciation + Anemia,Pair,4,4,1.0
+Emaciation + Coughing,Pair,4,4,1.0
+Emaciation + Weakness,Pair,4,4,1.0
+Enteritis,Single,4,4,1.0
+Enteritis + Weight loss,Pair,4,4,1.0
+Exhaustion,Single,4,4,1.0
+Eye closed,Single,4,4,1.0
+Eye disharge,Single,4,4,1.0
+Eye redness + Frequent eye Infections,Pair,4,4,1.0
+Facial edema + Dyspnea,Pair,4,4,1.0
+Fever + Ataxia,Pair,4,4,1.0
+Fever + Blindness,Pair,4,4,1.0
+Fever + Chills + Chest Pain,Triplet,4,4,1.0
+Fever + Colic,Pair,4,4,1.0
+Fever + Congestion,Pair,4,4,1.0
+Fever + Convulsion,Pair,4,4,1.0
+Fever + Coughing + Dyspnea,Triplet,4,4,1.0
+Fever + Coughing + Joint Pain,Triplet,4,4,1.0
+Fever + Coughing + Nasal Discharge,Triplet,4,4,1.0
+Fever + Coughing + Weight loss,Triplet,4,4,1.0
+Fever + Death + Coughing,Triplet,4,4,1.0
+Fever + Depression + Anorexia,Triplet,4,4,1.0
+Fever + Depression + Nasal Discharge,Triplet,4,4,1.0
+Fever + Depression + Salivation,Triplet,4,4,1.0
+Fever + Depression + Weight loss,Triplet,4,4,1.0
+Fever + Depression + loss of appetite,Triplet,4,4,1.0
+Fever + Diarrhea + Death,Triplet,4,4,1.0
+Fever + Difficulty breathing + Coughing,Triplet,4,4,1.0
+Fever + Difficulty in breathing + Sneezing,Triplet,4,4,1.0
+Fever + Dullness + Skin Rashes,Triplet,4,4,1.0
+Fever + Dyspnea + Lethargy,Triplet,4,4,1.0
+Fever + Headache,Pair,4,4,1.0
+Fever + Headache + Pain,Triplet,4,4,1.0
+Fever + Hemolytic anemia,Pair,4,4,1.0
+Fever + Hemolytic anemia + Jaundice,Triplet,4,4,1.0
+Fever + Incoordination,Pair,4,4,1.0
+Fever + Jaundice,Pair,4,4,1.0
+Fever + Lack of coordination,Pair,4,4,1.0
+Fever + Lack of coordination + Depression,Triplet,4,4,1.0
+Fever + Loss of appetite + Pains,Triplet,4,4,1.0
+Fever + Nasal discharge,Pair,4,4,1.0
+Fever + Nausea,Pair,4,4,1.0
+Fever + Pneumonia ,Pair,4,4,1.0
+Fever + Reduce growth,Pair,4,4,1.0
+Fever + Retarded Growth + Chest Pain,Triplet,4,4,1.0
+Fever + Rhinorrhea + Sneezing,Triplet,4,4,1.0
+Fever + Stumbling,Pair,4,4,1.0
+Fever + Succumb,Pair,4,4,1.0
+Fever + Succumb + Anorexia,Triplet,4,4,1.0
+Fever + Swelling + Pain,Triplet,4,4,1.0
+Fever + Tiredness + Muscle aches,Triplet,4,4,1.0
+Fever + Vomitting,Pair,4,4,1.0
+Fever + Weakness + Weight loss,Triplet,4,4,1.0
+Fever + Weight loss + Vomitting,Triplet,4,4,1.0
+Fever + los of the ability to walk,Pair,4,4,1.0
+Fever + weakened legs,Pair,4,4,1.0
+Fever + weakened legs + los of the ability to walk,Triplet,4,4,1.0
+Foul Smelling,Single,4,4,1.0
+Frequent eye Infections,Single,4,4,1.0
+Halitosis,Single,4,4,1.0
+Halitosis + Coughing,Pair,4,4,1.0
+Headache + Pain,Pair,4,4,1.0
+Heat + Pain,Pair,4,4,1.0
+Hemoglobinuria,Single,4,4,1.0
+Hemolytic anemia,Single,4,4,1.0
+Hemolytic anemia + Jaundice,Pair,4,4,1.0
+Immediate death,Single,4,4,1.0
+Inability to stand ,Single,4,4,1.0
+Inappentence,Single,4,4,1.0
+Incoordination,Single,4,4,1.0
+Infection,Single,4,4,1.0
+Itchiness,Single,4,4,1.0
+Jaundice + Lethargy,Pair,4,4,1.0
+Kid moratality,Single,4,4,1.0
+Kid moratality + Weakness,Pair,4,4,1.0
+Lack of coordination + Depression,Pair,4,4,1.0
+Lameness + Death,Pair,4,4,1.0
+Lethargy + Dehydration,Pair,4,4,1.0
+Lethargy + Diarrhea,Pair,4,4,1.0
+Lethargy + Weakness,Pair,4,4,1.0
+Loss of  appetite + Vomiting,Pair,4,4,1.0
+Loss of  appetite + Vomiting + Weight loss,Triplet,4,4,1.0
+Loss of Appetite + Lameness,Pair,4,4,1.0
+Loss of Appetite + Pains,Pair,4,4,1.0
+Loss of Appetite + Weakness,Pair,4,4,1.0
+Loss of appetite + Coughing,Pair,4,4,1.0
+Loss of appetite + Lameness,Pair,4,4,1.0
+Loss of appetite + Nasal Discharge,Pair,4,4,1.0
+Loss of appetite + Vomiting,Pair,4,4,1.0
+Loss of appetite + Weakness,Pair,4,4,1.0
+Loss of appetite + Weight loss,Pair,4,4,1.0
+Loss of eat,Single,4,4,1.0
+Lying down,Single,4,4,1.0
+Normal appetite,Single,4,4,1.0
+Pot belly,Single,4,4,1.0
+Red skin,Single,4,4,1.0
+Retarded Growth + Chest Pain,Pair,4,4,1.0
+Rhinorrhea + Coughing + Sneezing,Triplet,4,4,1.0
+Rhinorrhea + Sneezing,Pair,4,4,1.0
+Ruffled feathers,Single,4,4,1.0
+Ruffled feathers + Diarrhea,Pair,4,4,1.0
+Scartch,Single,4,4,1.0
+Shaking oh head,Single,4,4,1.0
+Shock,Single,4,4,1.0
+Sickness,Single,4,4,1.0
+Sickness + Weight loss,Pair,4,4,1.0
+Skin Rashes + Pains,Pair,4,4,1.0
+Skin infection,Single,4,4,1.0
+Sneezing + Lethargy,Pair,4,4,1.0
+Sneezing + Pain,Pair,4,4,1.0
+Sneezing + Weight loss,Pair,4,4,1.0
+Spines + Unusally thin + Weakness,Triplet,4,4,1.0
+Spines + Weakness,Pair,4,4,1.0
+Stillbirth,Single,4,4,1.0
+Stomach cramps,Single,4,4,1.0
+Straining,Single,4,4,1.0
+Straining + Diarrhea,Pair,4,4,1.0
+Stumbling,Single,4,4,1.0
+Succumb,Single,4,4,1.0
+Succumb + Anorexia,Pair,4,4,1.0
+Swelling + Nasal Discharge,Pair,4,4,1.0
+Tiredness + Muscle aches,Pair,4,4,1.0
+Torticollis,Single,4,4,1.0
+Trembling,Single,4,4,1.0
+Twitching,Single,4,4,1.0
+Ulcer,Single,4,4,1.0
+Ulcer + Pains,Pair,4,4,1.0
+Underdeveloped muscles,Single,4,4,1.0
+Unusally thin + Weakness,Pair,4,4,1.0
+Upset stomach + Diarrhea,Pair,4,4,1.0
+Upset stomach + Weight loss,Pair,4,4,1.0
+Urination,Single,4,4,1.0
+Vomiting + Lethargy + Dehydration,Triplet,4,4,1.0
+Vomiting + Weight loss + Dehydration,Triplet,4,4,1.0
+Vomiting + Weight loss + Pain,Triplet,4,4,1.0
+Weakness + Anemia,Pair,4,4,1.0
+Weakness + Pain,Pair,4,4,1.0
+Weakness + Stiffness,Pair,4,4,1.0
+Weakness + Weight loss,Pair,4,4,1.0
+Weight loss + Abdonormal pain,Pair,4,4,1.0
+Weight loss + Lameness,Pair,4,4,1.0
+Weight loss + Vomitting,Pair,4,4,1.0
+Wool loss,Single,4,4,1.0
+anorexia,Single,4,4,1.0
+changed gait,Single,4,4,1.0
+changed gait + dull ness,Pair,4,4,1.0
+cough + droopy wings,Pair,4,4,1.0
+cough + sneeze + droopy wings,Triplet,4,4,1.0
+cough  + extending its neck,Pair,4,4,1.0
+cough  + gasping for air,Pair,4,4,1.0
+cough  + gasping for air + extending its neck,Triplet,4,4,1.0
+difficulty swallowing + extending its neck,Pair,4,4,1.0
+difficulty swallowing + gasping for air,Pair,4,4,1.0
+difficulty swallowing + gasping for air + extending its neck,Triplet,4,4,1.0
+droopy wings + twisted neck,Pair,4,4,1.0
+dull ness + inappetence,Pair,4,4,1.0
+dull ness + muscles problem,Pair,4,4,1.0
+dull ness + recumbency,Pair,4,4,1.0
+dull ness + self-isolation,Pair,4,4,1.0
+dull ness + self-isolation + recumbency,Triplet,4,4,1.0
+experiencing changes in weight,Single,4,4,1.0
+experiencing changes in weight +  pain and bloating,Pair,4,4,1.0
+extending its neck + gasping for air + gasping for breath,Triplet,4,4,1.0
+extending its neck + gasping for breath,Pair,4,4,1.0
+gasping for air + extending its neck,Pair,4,4,1.0
+head tilt + lathargy,Pair,4,4,1.0
+head tilt + lathargy + inability to rise,Triplet,4,4,1.0
+head tilt + lathargy + urine dribbling,Triplet,4,4,1.0
+inappetence,Single,4,4,1.0
+lathargy + inability to rise,Pair,4,4,1.0
+lathargy + urine dribbling,Pair,4,4,1.0
+lathargy + urine dribbling + inability to rise,Triplet,4,4,1.0
+lllthrift,Single,4,4,1.0
+los of the ability to walk,Single,4,4,1.0
+loss of appetite + Lethargy,Pair,4,4,1.0
+loss of appetite + experiencing changes in weight,Pair,4,4,1.0
+loss of appetite + experiencing changes in weight +  pain and bloating,Triplet,4,4,1.0
+loss of appetite + ruffled feathers,Pair,4,4,1.0
+loss of appetite +  pain and bloating,Pair,4,4,1.0
+mild weakness,Single,4,4,1.0
+muscles problem,Single,4,4,1.0
+recumbency,Single,4,4,1.0
+self-isolation,Single,4,4,1.0
+self-isolation + recumbency,Pair,4,4,1.0
+sneeze + droopy wings,Pair,4,4,1.0
+sweating,Single,4,4,1.0
+swollen abdomen,Single,4,4,1.0
+thirst,Single,4,4,1.0
+twisted neck,Single,4,4,1.0
+vomiting,Single,4,4,1.0
+vomiting + experiencing changes in weight,Pair,4,4,1.0
+vomiting + experiencing changes in weight +  pain and bloating,Triplet,4,4,1.0
+vomiting + loss of appetite,Pair,4,4,1.0
+vomiting + loss of appetite + experiencing changes in weight,Triplet,4,4,1.0
+vomiting + loss of appetite +  pain and bloating,Triplet,4,4,1.0
+vomiting +  pain and bloating,Pair,4,4,1.0
+weakened legs,Single,4,4,1.0
+weakened legs + los of the ability to walk,Pair,4,4,1.0
+weight loss,Single,4,4,1.0
+weight loss + dull ness,Pair,4,4,1.0
+weight loss + dull ness + recumbency,Triplet,4,4,1.0
+weight loss + dull ness + self-isolation,Triplet,4,4,1.0
+weight loss + recumbency,Pair,4,4,1.0
+weight loss + self-isolation,Pair,4,4,1.0
+weight loss + self-isolation + recumbency,Triplet,4,4,1.0
+ pain and bloating,Single,4,4,1.0
+Abortion + Weight loss,Pair,3,3,1.0
+Back Pain,Single,3,3,1.0
+Bloody + Anemia,Pair,3,3,1.0
+Bloody Diarrhea,Single,3,3,1.0
+Bloody Drool,Single,3,3,1.0
+Bloody Drool + Lossened Teeth,Pair,3,3,1.0
+Bloody Drool + Unable To Eat,Pair,3,3,1.0
+Bloody Drool + Unable To Eat + Lossened Teeth,Triplet,3,3,1.0
+Blue Eye,Single,3,3,1.0
+Broken Bones,Single,3,3,1.0
+Broken Bones + Nasal Discharge,Pair,3,3,1.0
+Chronic eye inflamation,Single,3,3,1.0
+Chronic eye inflamation + Lethargy,Pair,3,3,1.0
+Chronic eye inflamation + Lethargy + Neurologic abnormalities,Triplet,3,3,1.0
+Chronic eye inflamation + Neurologic abnormalities,Pair,3,3,1.0
+Crusting of the skin,Single,3,3,1.0
+Crusting of the skin + Ulcerated skin,Pair,3,3,1.0
+Dandruff,Single,3,3,1.0
+Dandruff + Crusting of the skin,Pair,3,3,1.0
+Dandruff + Crusting of the skin + Ulcerated skin,Triplet,3,3,1.0
+Dandruff + Ulcerated skin,Pair,3,3,1.0
+Darkened skin,Single,3,3,1.0
+Depression + Limping,Pair,3,3,1.0
+Diarrhea + Blue Eye,Pair,3,3,1.0
+Diarrhea + Enlarged lymph nodes,Pair,3,3,1.0
+Diarrhea + Lethargy + Blue Eye,Triplet,3,3,1.0
+Diarrhea + Severe weekness and depression,Pair,3,3,1.0
+Diarrhea + Stiffness,Pair,3,3,1.0
+Diarrhea + Stiffness + Severe weekness and depression,Triplet,3,3,1.0
+Diarrhea + Tarry Stool,Pair,3,3,1.0
+Diarrhea + Tarry Stool + Enlarged lymph nodes,Triplet,3,3,1.0
+Diarrhea with muscus,Single,3,3,1.0
+Diarrhea with muscus + Flatulence,Pair,3,3,1.0
+Diarrhea with muscus + Flatulence + Pains,Triplet,3,3,1.0
+Diarrhea with muscus + Pains,Pair,3,3,1.0
+Diarrhea with muscus + Tensemus,Pair,3,3,1.0
+Diarrhea with muscus + Tensemus + Flatulence,Triplet,3,3,1.0
+Diarrhea with muscus + Tensemus + Pains,Triplet,3,3,1.0
+Difficulty breathing + Enlarged lymph nodes or Swelling,Pair,3,3,1.0
+Difficulty breathing + Eye and Skin change,Pair,3,3,1.0
+Difficulty breathing + Eye and Skin change + Unable to exercise,Triplet,3,3,1.0
+Difficulty breathing + Lethargy,Pair,3,3,1.0
+Difficulty breathing + Lethargy + Sneezing,Triplet,3,3,1.0
+Difficulty breathing + Sneezing,Pair,3,3,1.0
+Difficulty breathing + Thrist and urination,Pair,3,3,1.0
+Difficulty breathing + Unable to exercise,Pair,3,3,1.0
+Difficulty breathing + Weight loss,Pair,3,3,1.0
+Difficulty breathing + Weight loss + Enlarged lymph nodes or Swelling,Triplet,3,3,1.0
+Difficulty walking,Single,3,3,1.0
+Difficulty walking + Lethargy,Pair,3,3,1.0
+Difficulty walking + Lethargy + Vaginal Discharge,Triplet,3,3,1.0
+Difficulty walking + Vaginal Discharge,Pair,3,3,1.0
+Discharge From eyes,Single,3,3,1.0
+Enlarged lymph nodes or Swelling,Single,3,3,1.0
+Eye and Skin change,Single,3,3,1.0
+Eye and Skin change + Unable to exercise,Pair,3,3,1.0
+Facial Swelling + Bloody Drool,Pair,3,3,1.0
+Facial Swelling + Bloody Drool + Lossened Teeth,Triplet,3,3,1.0
+Facial Swelling + Bloody Drool + Unable To Eat,Triplet,3,3,1.0
+Facial Swelling + Lossened Teeth,Pair,3,3,1.0
+Facial Swelling + Unable To Eat,Pair,3,3,1.0
+Facial Swelling + Unable To Eat + Lossened Teeth,Triplet,3,3,1.0
+Fever + Anemia,Pair,3,3,1.0
+Fever + Bloody,Pair,3,3,1.0
+Fever + Blue Eye,Pair,3,3,1.0
+Fever + Chronic eye inflamation,Pair,3,3,1.0
+Fever + Chronic eye inflamation + Lethargy,Triplet,3,3,1.0
+Fever + Chronic eye inflamation + Neurologic abnormalities,Triplet,3,3,1.0
+Fever + Coughing + Depression,Triplet,3,3,1.0
+Fever + Coughing + Pains,Triplet,3,3,1.0
+Fever + Death + Pains,Triplet,3,3,1.0
+Fever + Depression + Limping,Triplet,3,3,1.0
+Fever + Diarrhea + Blue Eye,Triplet,3,3,1.0
+Fever + Diarrhea + Severe weekness and depression,Triplet,3,3,1.0
+Fever + Diarrhea + Stiffness,Triplet,3,3,1.0
+Fever + Difficulty breathing + Enlarged lymph nodes or Swelling,Triplet,3,3,1.0
+Fever + Difficulty breathing + Eye and Skin change,Triplet,3,3,1.0
+Fever + Difficulty breathing + Lethargy,Triplet,3,3,1.0
+Fever + Difficulty breathing + Sneezing,Triplet,3,3,1.0
+Fever + Difficulty breathing + Thrist and urination,Triplet,3,3,1.0
+Fever + Difficulty breathing + Unable to exercise,Triplet,3,3,1.0
+Fever + Difficulty breathing + Weight loss,Triplet,3,3,1.0
+Fever + Enlarged lymph nodes or Swelling,Pair,3,3,1.0
+Fever + Eye and Skin change,Pair,3,3,1.0
+Fever + Eye and Skin change + Unable to exercise,Triplet,3,3,1.0
+Fever + Hyperesthesia,Pair,3,3,1.0
+Fever + Hyperesthesia + Sudden death,Triplet,3,3,1.0
+Fever + Inflammed eye,Pair,3,3,1.0
+Fever + Inflammed eye + Depression,Triplet,3,3,1.0
+Fever + Inflammed eye + Limping,Triplet,3,3,1.0
+Fever + Lameness + Swelling of joints,Triplet,3,3,1.0
+Fever + Lession on the skin,Pair,3,3,1.0
+Fever + Lethargy + Blue Eye,Triplet,3,3,1.0
+Fever + Lethargy + Joint Pain,Triplet,3,3,1.0
+Fever + Lethargy + Neurologic abnormalities,Triplet,3,3,1.0
+Fever + Lethargy + Sneezing,Triplet,3,3,1.0
+Fever + Limping,Pair,3,3,1.0
+Fever + Loss of  appetite + Coughing,Triplet,3,3,1.0
+Fever + Loss of  appetite + Joint Pain,Triplet,3,3,1.0
+Fever + Loss of  appetite + Lameness,Triplet,3,3,1.0
+Fever + Loss of  appetite + Lethargy,Triplet,3,3,1.0
+Fever + Loss of  appetite + Swelling of joints,Triplet,3,3,1.0
+Fever + Neurologic abnormalities,Pair,3,3,1.0
+Fever + Reduce Energy,Pair,3,3,1.0
+Fever + Respiratory distress + Hyperesthesia,Triplet,3,3,1.0
+Fever + Respiratory distress + Sudden death,Triplet,3,3,1.0
+Fever + Severe weekness and depression,Pair,3,3,1.0
+Fever + Stiffness,Pair,3,3,1.0
+Fever + Stiffness + Severe weekness and depression,Triplet,3,3,1.0
+Fever + Swelling + Weight loss,Triplet,3,3,1.0
+Fever + Swelling of face or leg,Pair,3,3,1.0
+Fever + Swelling of face or leg + Depression,Triplet,3,3,1.0
+Fever + Swelling of face or leg + Pains,Triplet,3,3,1.0
+Fever + Swelling of joints,Pair,3,3,1.0
+Fever + Thrist and urination,Pair,3,3,1.0
+Fever + Unable to exercise,Pair,3,3,1.0
+Fever + Vomiting + Anorexia,Triplet,3,3,1.0
+Fever + Vomiting + Weight loss,Triplet,3,3,1.0
+Fever + Weight loss + Enlarged lymph nodes or Swelling,Triplet,3,3,1.0
+Flatulence,Single,3,3,1.0
+Flatulence + Pains,Pair,3,3,1.0
+Greenish-yellow nasal discharge,Single,3,3,1.0
+Greenish-yellow nasal discharge + Lack of pigmentation,Pair,3,3,1.0
+Greenish-yellow nasal discharge + Lack of pigmentation + Lethargy,Triplet,3,3,1.0
+Greenish-yellow nasal discharge + Lack of pigmentation + Pain on face,Triplet,3,3,1.0
+Greenish-yellow nasal discharge + Lethargy,Pair,3,3,1.0
+Greenish-yellow nasal discharge + Lethargy + Pain on face,Triplet,3,3,1.0
+Greenish-yellow nasal discharge + Pain on face,Pair,3,3,1.0
+Hair loss + Crusting of the skin,Pair,3,3,1.0
+Hair loss + Crusting of the skin + Ulcerated skin,Triplet,3,3,1.0
+Hair loss + Dandruff,Pair,3,3,1.0
+Hair loss + Dandruff + Crusting of the skin,Triplet,3,3,1.0
+Hair loss + Dandruff + Ulcerated skin,Triplet,3,3,1.0
+Hair loss + Ulcerated skin,Pair,3,3,1.0
+Hyperesthesia,Single,3,3,1.0
+Hyperesthesia + Sudden death,Pair,3,3,1.0
+Inflammed eye,Single,3,3,1.0
+Inflammed eye + Depression,Pair,3,3,1.0
+Inflammed eye + Depression + Limping,Triplet,3,3,1.0
+Inflammed eye + Limping,Pair,3,3,1.0
+Kicking at the belly,Single,3,3,1.0
+Kicking at the belly + Pains,Pair,3,3,1.0
+Lack of pigmentation,Single,3,3,1.0
+Lack of pigmentation + Lethargy,Pair,3,3,1.0
+Lack of pigmentation + Lethargy + Pain on face,Triplet,3,3,1.0
+Lack of pigmentation + Pain on face,Pair,3,3,1.0
+Lameness + Swelling of joints,Pair,3,3,1.0
+Lesions in the nasal cavity,Single,3,3,1.0
+Lesions in the nasal cavity + Lesions on nose + Lesions on nose,Triplet,3,3,1.0
+Lesions in the nasal cavity + Lesions on nose + Noisy Breathing,Triplet,3,3,1.0
+Lesions in the nasal cavity + Noisy Breathing,Pair,3,3,1.0
+Lesions in the nasal cavity + Noisy Breathing + Lesions on nose,Triplet,3,3,1.0
+Lesions on nose + Lesions on nose,Pair,3,3,1.0
+Lesions on nose + Noisy Breathing,Pair,3,3,1.0
+Lesions on nose + Noisy Breathing + Lesions on nose,Triplet,3,3,1.0
+Lethargy + Blue Eye,Pair,3,3,1.0
+Lethargy + Joint Pain,Pair,3,3,1.0
+Lethargy + Loss of appettite,Pair,3,3,1.0
+Lethargy + Neurologic abnormalities,Pair,3,3,1.0
+Lethargy + Pain on face,Pair,3,3,1.0
+Lethargy + Vaginal Discharge,Pair,3,3,1.0
+Listless,Single,3,3,1.0
+Loss of  appetite + Joint Pain,Pair,3,3,1.0
+Loss of  appetite + Lameness + Swelling of joints,Triplet,3,3,1.0
+Loss of  appetite + Lethargy,Pair,3,3,1.0
+Loss of  appetite + Lethargy + Joint Pain,Triplet,3,3,1.0
+Loss of  appetite + Rapid Heart Rate,Pair,3,3,1.0
+Loss of  appetite + Rapid Heart Rate + Week pulse,Triplet,3,3,1.0
+Loss of  appetite + Swelling of joints,Pair,3,3,1.0
+Loss of  appetite + Week pulse,Pair,3,3,1.0
+Loss of Appetite + Death,Pair,3,3,1.0
+Lossened Teeth,Single,3,3,1.0
+Nasal Discharge + Lethargy,Pair,3,3,1.0
+Noisy Breathing,Single,3,3,1.0
+Noisy Breathing + Lesions on nose,Pair,3,3,1.0
+Nose Bleeds,Single,3,3,1.0
+Pain on face,Single,3,3,1.0
+Painfull + Broken Bones,Pair,3,3,1.0
+Painfull + Broken Bones + Nasal Discharge,Triplet,3,3,1.0
+Rapid Heart Rate,Single,3,3,1.0
+Rapid Heart Rate + Week pulse,Pair,3,3,1.0
+Reduce Energy,Single,3,3,1.0
+Respiratory distress + Hyperesthesia,Pair,3,3,1.0
+Respiratory distress + Hyperesthesia + Sudden death,Triplet,3,3,1.0
+Respiratory distress + Sudden death,Pair,3,3,1.0
+Runny nose + Lethargy,Pair,3,3,1.0
+Runny nose + Lethargy + Loss of appettite,Triplet,3,3,1.0
+Scartching ear,Single,3,3,1.0
+Severe weekness and depression,Single,3,3,1.0
+Short term lethargy,Single,3,3,1.0
+Short term lethargy + Loss of  appetite,Pair,3,3,1.0
+Short term lethargy + Loss of  appetite + Rapid Heart Rate,Triplet,3,3,1.0
+Short term lethargy + Loss of  appetite + Week pulse,Triplet,3,3,1.0
+Short term lethargy + Rapid Heart Rate,Pair,3,3,1.0
+Short term lethargy + Rapid Heart Rate + Week pulse,Triplet,3,3,1.0
+Short term lethargy + Week pulse,Pair,3,3,1.0
+Stiffness + Severe weekness and depression,Pair,3,3,1.0
+Strong cough,Single,3,3,1.0
+Strong cough + Lethargy,Pair,3,3,1.0
+Strong cough + Lethargy + Loss of appettite,Triplet,3,3,1.0
+Strong cough + Loss of appettite,Pair,3,3,1.0
+Strong cough + Runny nose,Pair,3,3,1.0
+Strong cough + Runny nose + Lethargy,Triplet,3,3,1.0
+Strong cough + Runny nose + Loss of appettite,Triplet,3,3,1.0
+Swelling + Heat,Pair,3,3,1.0
+Swelling of face or leg + Depression,Pair,3,3,1.0
+Swelling of face or leg + Depression + Pains,Triplet,3,3,1.0
+Swelling of face or leg + Pains,Pair,3,3,1.0
+Swelling of joints,Single,3,3,1.0
+Swelling on leg + Broken Bones,Pair,3,3,1.0
+Swelling on leg + Broken Bones + Nasal Discharge,Triplet,3,3,1.0
+Swelling on leg + Painfull,Pair,3,3,1.0
+Swelling on leg + Painfull + Broken Bones,Triplet,3,3,1.0
+Swollen lymph nodes,Single,3,3,1.0
+Swollen lymph nodes + Difficulty walking,Pair,3,3,1.0
+Swollen lymph nodes + Difficulty walking + Lethargy,Triplet,3,3,1.0
+Swollen lymph nodes + Difficulty walking + Vaginal Discharge,Triplet,3,3,1.0
+Swollen lymph nodes + Lethargy,Pair,3,3,1.0
+Swollen lymph nodes + Lethargy + Vaginal Discharge,Triplet,3,3,1.0
+Swollen lymph nodes + Vaginal Discharge,Pair,3,3,1.0
+Tarry Stool,Single,3,3,1.0
+Tarry Stool + Enlarged lymph nodes,Pair,3,3,1.0
+Tear production,Single,3,3,1.0
+Tensemus,Single,3,3,1.0
+Tensemus + Flatulence,Pair,3,3,1.0
+Tensemus + Flatulence + Pains,Triplet,3,3,1.0
+Tensemus + Pains,Pair,3,3,1.0
+Thrist and urination,Single,3,3,1.0
+Ulcerated skin,Single,3,3,1.0
+Ulcers + Diarrhea,Pair,3,3,1.0
+Ulcers + Diarrhea + Enlarged lymph nodes,Triplet,3,3,1.0
+Ulcers + Diarrhea + Tarry Stool,Triplet,3,3,1.0
+Ulcers + Enlarged lymph nodes,Pair,3,3,1.0
+Ulcers + Tarry Stool,Pair,3,3,1.0
+Ulcers + Tarry Stool + Enlarged lymph nodes,Triplet,3,3,1.0
+Unable To Eat,Single,3,3,1.0
+Unable To Eat + Lossened Teeth,Pair,3,3,1.0
+Unable to exercise,Single,3,3,1.0
+Vaginal Discharge,Single,3,3,1.0
+Vomiting + Head ache,Pair,3,3,1.0
+Vomiting + Weight loss + Anorexia,Triplet,3,3,1.0
+Watery Stool,Single,3,3,1.0
+Weakness + Death,Pair,3,3,1.0
+Week pulse,Single,3,3,1.0
+Weekness in the back legs,Single,3,3,1.0
+Weight loss + Enlarged lymph nodes or Swelling,Pair,3,3,1.0
+Fever,Single,261,259,0.9923371647509579
+loss of appetite,Single,56,54,0.9642857142857143
+Coughing,Single,105,101,0.9619047619047619
+Weight loss,Single,153,147,0.9607843137254902
+Fever + Weight loss,Pair,47,45,0.9574468085106383
+Diarrhea + Weight loss,Pair,46,44,0.9565217391304348
+Sneezing,Single,43,41,0.9534883720930233
+Depression,Single,74,70,0.9459459459459459
+Pain,Single,72,68,0.9444444444444444
+Difficulty in breathing,Single,36,34,0.9444444444444444
+Loss of appetite,Single,34,32,0.9411764705882353
+Dehydration,Single,32,30,0.9375
+Diarrhea,Single,145,135,0.9310344827586207
+Fever + Pain,Pair,28,26,0.9285714285714286
+Anorexia,Single,51,47,0.9215686274509803
+Diarrhea + Pain,Pair,22,20,0.9090909090909091
+Weakness,Single,63,57,0.9047619047619048
+Anemia,Single,20,18,0.9
+Diarrhea + Dehydration,Pair,18,16,0.8888888888888888
+Nasal Discharge,Single,48,42,0.875
+Coughing + Nasal Discharge,Pair,14,12,0.8571428571428571
+Skin rashes,Single,14,12,0.8571428571428571
+Diarrhea + Weight loss + Pain,Triplet,12,10,0.8333333333333334
+Weight loss + Pain,Pair,20,16,0.8
+loss of appetite + Weight loss,Pair,10,8,0.8
+Depression + Weight loss,Pair,8,6,0.75
+Diarrhea + Weakness,Pair,8,6,0.75
+Fever + Weight loss + Pain,Triplet,8,6,0.75
+Sneezing + Nasal Discharge,Pair,8,6,0.75
+Weakness + Diarrhea,Pair,8,6,0.75
+Weight loss + Anemia,Pair,8,6,0.75
+Coughing + Difficulty in breathing,Pair,6,4,0.6666666666666666
+Depression + Nasal Discharge,Pair,6,4,0.6666666666666666
+Skin rashes + Pain,Pair,6,4,0.6666666666666666
+Sneezing + Coughing,Pair,6,4,0.6666666666666666
+Sneezing + Coughing + Difficulty in breathing,Triplet,6,4,0.6666666666666666
+Sneezing + Difficulty in breathing,Pair,6,4,0.6666666666666666
+ruffled feathers,Single,6,4,0.6666666666666666
+Diarrhea + Anorexia,Pair,10,6,0.6
+Facial Swelling,Single,5,3,0.6
+Lesion,Single,5,3,0.6
+Anorexia + Nasal Discharge,Pair,4,2,0.5
+Dehydration + Anorexia,Pair,4,2,0.5
+Dejection,Single,4,2,0.5
+Depression + Coughing,Pair,4,2,0.5
+Difficulty in breathing + Nasal Discharge,Pair,4,2,0.5
+Epistaxis,Single,4,2,0.5
+Fever + Skin rashes,Pair,4,2,0.5
+Fever + Skin rashes + Pain,Triplet,4,2,0.5
+Heavy Breathing,Single,4,2,0.5
+Labored breathing,Single,4,2,0.5
+Lacrimation,Single,4,2,0.5
+Lacrimation + Diarrhea,Pair,4,2,0.5
+Skin rashes + Weight loss,Pair,4,2,0.5
+Weakness + Anorexia,Pair,4,2,0.5
+loss of appetite + Depression,Pair,4,2,0.5
+Diarrhea + Nasal Discharge,Pair,3,1,0.3333333333333333
