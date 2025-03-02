@@ -804,29 +804,53 @@ if st.sidebar.button("Generate Report"):
     st.sidebar.success("Report generated! Click below to download.")
     # This would typically generate a report file
 
-st.sidebar.download_button(
-    label="Download Report",
-    data="Sample report content would go here",
-    file_name=f"{report_type.lower().replace(' ', '_')}_report.pdf",
-    mime="application/pdf",
-    disabled=True  # Would be enabled in a real application
+# Generate a sample PDF report
+def generate_pdf_report(report_type):
+    from io import BytesIO
+    from reportlab.pdfgen import canvas
+
+    # Create a PDF buffer
+    buffer = BytesIO()
+
+    # Create a PDF object
+    pdf = canvas.Canvas(buffer)
+
+    # Add content to the PDF
+    pdf.drawString(100, 750, f"{report_type} Report")
+    pdf.drawString(100, 730, "This is a sample report generated for the Animal Health Patterns Explorer.")
+    pdf.drawString(100, 710, "Replace this content with actual data and analysis.")
+
+    # Save the PDF
+    pdf.showPage()
+    pdf.save()
+
+    # Get the PDF content
+    buffer.seek(0)
+    return buffer.getvalue()
+
+# Download section for reports
+st.sidebar.header("Download Reports")
+st.sidebar.markdown("Generate and download reports with key findings:")
+
+report_type = st.sidebar.selectbox(
+    "Select report type:",
+    ["Overall Summary", "Species-Specific Analysis", "Symptom Risk Analysis"]
 )
 
-# Add filters in sidebar
-st.sidebar.header("Additional Filters")
-st.sidebar.markdown("These filters apply to all visualizations")
-
-# Filter by danger status
-danger_filter = st.sidebar.radio(
-    "Filter by condition status:",
-    ["All", "Dangerous Only", "Non-dangerous Only"]
-)
-
-# Date range filter (example - would be implemented if dataset had dates)
-st.sidebar.date_input(
-    "Date range (if applicable):",
-    value=(pd.to_datetime("2023-01-01"), pd.to_datetime("2023-12-31"))
-)
+if st.sidebar.button("Generate Report"):
+    st.sidebar.success("Report generated! Click below to download.")
+    
+    # Generate the PDF report
+    pdf_content = generate_pdf_report(report_type)
+    
+    # Enable the download button
+    st.sidebar.download_button(
+        label="Download Report",
+        data=pdf_content,
+        file_name=f"{report_type.lower().replace(' ', '_')}_report.pdf",
+        mime="application/pdf"
+    )
+    
 
 # About section
 st.sidebar.markdown("---")
