@@ -33,7 +33,6 @@ Our exploration is guided by the following key questions:
 - **Interactive Visualizations**: Engaging charts and graphs that highlight key findings.
 - **Species-Specific Insights**: Detailed reports on health risks for different species.
 - **Symptom Correlation Analysis**: Understanding how symptom combinations relate to dangerous conditions.
-```
 
 ## 📜 License
 
