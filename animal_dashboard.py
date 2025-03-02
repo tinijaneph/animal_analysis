@@ -800,8 +800,6 @@ report_type = st.sidebar.selectbox(
     ["Overall Summary", "Species-Specific Analysis", "Symptom Risk Analysis"]
 )
 
-if st.sidebar.button("Generate Report"):
-    st.sidebar.success("Report generated! Click below to download.")
     # This would typically generate a report file
 
 # Generate a sample PDF report
