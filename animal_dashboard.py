@@ -20,7 +20,6 @@ st.set_page_config(
 @st.cache_data
 def load_data():
     try:
-        # Load all the derived datasets
         df = pd.read_csv('animal_data.csv')
         symptom_by_species = pd.read_csv('symptom_by_species.csv')
         danger_correlation = pd.read_csv('symptom_danger_correlation.csv')
@@ -31,7 +30,6 @@ def load_data():
         species_specific_symptoms = pd.read_csv('species_specific_symptoms.csv')
         species_danger_patterns = pd.read_csv('species_danger_patterns.csv')
         
-        # Create unpivoted version of the original data
         symptom_columns = ['symptoms1', 'symptoms2', 'symptoms3', 'symptoms4', 'symptoms5']
         df['SymptomCount'] = df[symptom_columns].apply(
             lambda row: row[row != "None reported"].count(), axis=1
@@ -93,7 +91,6 @@ across different species. Analyze common symptoms, dangerous conditions, and spe
 health patterns through various visualizations.
 """)
 
-# Create tabs for different research questions
 tab1, tab2, tab3, tab4 = st.tabs([
     "Symptom Frequency & Danger", 
     "Species Risk Analysis", 
@@ -132,10 +129,8 @@ with tab1:
             else:
                 filtered_data = data['symptom_by_species']
             
-            # Aggregate to get top symptoms
             top_symptoms = filtered_data.groupby('Symptom')['Count'].sum().reset_index().sort_values('Count', ascending=False).head(top_n)
             
-            # Heatmap data
             if not top_symptoms.empty and not filtered_data.empty:
                 # Create heatmap data
                 heatmap_data = filtered_data[filtered_data['Symptom'].isin(top_symptoms['Symptom'])]
@@ -170,7 +165,6 @@ with tab1:
     with col2:
         st.subheader("Symptoms Most Associated with Danger")
         
-        # Check if data is available
         if not data['danger_correlation'].empty:
             # Filter and sort danger correlation data
             danger_data = data['danger_correlation'].sort_values('DangerCoefficient', ascending=False)
@@ -201,7 +195,6 @@ with tab1:
         else:
             st.warning("No danger correlation data available.")
     
-    # Analysis insights
     st.subheader("Key Insights:")
     
     col1, col2 = st.columns(2)
@@ -478,7 +471,6 @@ with tab3:
     are most associated with dangerous conditions.
     """)
     
-    # Check if data is available
     if not data['combination_stats'].empty:
         # Filter options
         combination_type = st.selectbox(
@@ -489,7 +481,6 @@ with tab3:
         
         min_occurrences = st.slider("Minimum number of occurrences:", 3, 20, 5)
         
-        # Filter data
         if combination_type != 'All':
             filtered_combinations = data['combination_stats'][
                 (data['combination_stats']['CombinationType'] == combination_type) & 
@@ -500,7 +491,6 @@ with tab3:
                 data['combination_stats']['Count'] >= min_occurrences
             ]
         
-        # Sort by danger rate
         if not filtered_combinations.empty:
             top_combinations = filtered_combinations.sort_values(
                 ['DangerRate', 'Count'], 
@@ -728,7 +718,6 @@ with tab4:
     which symptoms are most predictive of danger for specific species.
     """)
     
-    # Species selection
     species_list = sorted(data['species_specific_symptoms']['AnimalName'].unique())
     selected_species_tab4 = st.selectbox(
         "Select species to analyze:",
@@ -740,12 +729,10 @@ with tab4:
     with col1:
         st.subheader("Distinctive Symptoms for Selected Species")
         
-        # Filter data for selected species
         distinctive_symptoms = data['species_specific_symptoms'][
             data['species_specific_symptoms']['AnimalName'] == selected_species_tab4
         ].sort_values('Distinctiveness', ascending=False).head(10)
         
-        # Create bar chart
         fig = px.bar(
             distinctive_symptoms,
             y='Symptom',
@@ -767,12 +754,10 @@ with tab4:
     with col2:
         st.subheader("Danger Indicators for Selected Species")
         
-        # Filter danger patterns for selected species
         species_danger_indicators = data['species_danger_patterns'][
             data['species_danger_patterns']['AnimalName'] == selected_species_tab4
         ].sort_values('RelativeRisk', ascending=False).head(10)
         
-        # Create bar chart
         fig = px.bar(
             species_danger_indicators,
             y='Symptom',
@@ -908,18 +893,3 @@ st.markdown("""
 This interactive dashboard was created to explore animal health patterns and trends across different species. 
 It analyzes a comprehensive dataset of animal symptoms and conditions to identify key risk factors and species-specific patterns.
 """)
-
-# report_type = st.sidebar.selectbox(
-#     "Select report type:",
-#     ["Overall Summary", "Species-Specific Analysis", "Symptom Risk Analysis"]
-# )
-    
-
-# # About section
-# st.sidebar.markdown("---")
-# st.sidebar.info("""
-# **Project: Exploring Animal Health Patterns**
-
-# This project analyzes the "Animal Condition Classification Dataset" 
-# to identify patterns and trends in animal health conditions across different species.
-# """)
