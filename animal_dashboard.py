@@ -220,40 +220,40 @@ with tab1:
     with col2:
         if 'top_symptoms' in locals() and not top_symptoms.empty and 'danger_data' in locals() and not danger_data.empty:
         # Get specific insights from the data
-        most_common = top_symptoms.iloc[0]['Symptom']
-        second_common = top_symptoms.iloc[1]['Symptom'] if len(top_symptoms) > 1 else ""
-        most_dangerous = danger_data.iloc[0]['Symptom']
-        danger_coefficient = danger_data.iloc[0]['DangerCoefficient']
+            most_common = top_symptoms.iloc[0]['Symptom']
+            second_common = top_symptoms.iloc[1]['Symptom'] if len(top_symptoms) > 1 else ""
+            most_dangerous = danger_data.iloc[0]['Symptom']
+            danger_coefficient = danger_data.iloc[0]['DangerCoefficient']
         
-        # Get species-specific insights if species were selected
-        species_insights = ""
-        if selected_species and len(selected_species) <= 3:  # Only for focused comparisons
-            # Extract species-specific top symptoms
-            species_specific_insights = []
-            for species in selected_species:
-                species_data = filtered_data[filtered_data['AnimalName'] == species]
-                if not species_data.empty:
-                    top_for_species = species_data.sort_values('Percentage', ascending=False).iloc[0]['Symptom']
-                    species_specific_insights.append(f"- **{species}**: Most common symptom is '{top_for_species}'")
+            # Get species-specific insights if species were selected
+            species_insights = ""
+            if selected_species and len(selected_species) <= 3:  # Only for focused comparisons
+                # Extract species-specific top symptoms
+                species_specific_insights = []
+                for species in selected_species:
+                    species_data = filtered_data[filtered_data['AnimalName'] == species]
+                    if not species_data.empty:
+                        top_for_species = species_data.sort_values('Percentage', ascending=False).iloc[0]['Symptom']
+                        species_specific_insights.append(f"- **{species}**: Most common symptom is '{top_for_species}'")
+                
+                if species_specific_insights:
+                    species_insights = "\n\n**Species-specific patterns:**\n" + "\n".join(species_specific_insights)
             
-            if species_specific_insights:
-                species_insights = "\n\n**Species-specific patterns:**\n" + "\n".join(species_specific_insights)
-        
-        st.markdown(f"""
-        #### Observations:
-        - '{most_common}' is the most prevalent symptom across {len(selected_species) if selected_species else "all"} species
-        - '{most_dangerous}' shows the strongest association with dangerous conditions ({danger_coefficient:.2f}x higher risk)
-        - {len(top_symptoms)} symptoms account for the majority of all reported cases
-        - The data suggests monitoring for '{most_dangerous}' should be prioritized given its strong danger association
-        {species_insights}
-        """)
-    else:
-        st.markdown("""
-        #### Observations:
-        - Select species and parameters above to generate specific insights
-        - Common symptoms vary significantly across species
-        - Some symptoms are strongly associated with dangerous conditions
-        """)
+            st.markdown(f"""
+            #### Observations:
+            - '{most_common}' is the most prevalent symptom across {len(selected_species) if selected_species else "all"} species
+            - '{most_dangerous}' shows the strongest association with dangerous conditions ({danger_coefficient:.2f}x higher risk)
+            - {len(top_symptoms)} symptoms account for the majority of all reported cases
+            - The data suggests monitoring for '{most_dangerous}' should be prioritized given its strong danger association
+            {species_insights}
+            """)
+        else:
+            st.markdown("""
+            #### Observations:
+            - Select species and parameters above to generate specific insights
+            - Common symptoms vary significantly across species
+            - Some symptoms are strongly associated with dangerous conditions
+            """)
 
 # Tab 2: Species Risk Analysis
 with tab2:
