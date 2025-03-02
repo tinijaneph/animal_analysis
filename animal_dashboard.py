@@ -700,11 +700,13 @@ with tab3:
                     # Calculate danger threshold
                     high_danger_combos = filtered_combinations[filtered_combinations['DangerRate'] > 0.7].shape[0]
                     
-                    st.markdown(f"#### Observations for {selected_species_tab4}:")
-                    st.markdown(f"- '{most_distinctive}' is **{distinctiveness_score:.1f}x** more common in {selected_species_tab4} than in other species and appears in {proportion:.1%} of cases")
-                    st.markdown(f"- '{top_danger}' is the strongest indicator of danger with {relative_risk:.1f}x higher risk and a {danger_rate:.1%} danger rate when present")
-                    st.markdown(f"- {high_risk_symptoms} symptoms show at least 2x higher risk of danger when present")
-                    st.markdown(f"- This species shows a unique symptom profile that requires targeted monitoring{heatmap_insight}")
+                    st.markdown(f"""
+                    #### Observations:
+                    - The combination **'{top_combo}'** has the highest danger rate ({top_combo_rate:.1%}) among combinations with at least {min_occurrences} occurrences
+                    - {high_danger_combos} symptom combinations have a danger rate above 70%
+                    - {most_common_type} combinations are most common in the filtered dataset
+                    - When monitoring for dangerous conditions, combinations provide more predictive power than individual symptoms{network_insight}
+                    """)
                 else:
                     st.markdown("""
                     #### Observations:
@@ -885,13 +887,11 @@ with tab4:
                     max_danger_rate = species_data.sort_values('DangerRate', ascending=False).iloc[0]['DangerRate']
                     heatmap_insight = f"\n- Among the selected symptoms, '{max_danger_symptom}' shows the highest danger rate ({max_danger_rate:.1%}) for {selected_species_tab4}"
             
-            st.markdown(f"""
-            #### Observations for {selected_species_tab4}:
-            - '{most_distinctive}' is **{distinctiveness_score:.1f}x** more common in {selected_species_tab4} than in other species and appears in {proportion:.1%} of cases
-            - '{top_danger}' is the strongest indicator of danger with {relative_risk:.1f}x higher risk and a {danger_rate:.1%} danger rate when present
-            - {high_risk_symptoms} symptoms show at least 2x higher risk of danger when present
-            - This species shows a unique symptom profile that requires targeted monitoring{heatmap_insight}
-            """, unsafe_allow_html=True)
+            st.markdown(f"#### Observations for {selected_species_tab4}:")
+            st.markdown(f"- '{most_distinctive}' is **{distinctiveness_score:.1f}x** more common in {selected_species_tab4} than in other species and appears in {proportion:.1%} of cases")
+            st.markdown(f"- '{top_danger}' is the strongest indicator of danger with {relative_risk:.1f}x higher risk and a {danger_rate:.1%} danger rate when present")
+            st.markdown(f"- {high_risk_symptoms} symptoms show at least 2x higher risk of danger when present")
+            st.markdown(f"- This species shows a unique symptom profile that requires targeted monitoring{heatmap_insight}")
         else:
             st.markdown(f"""
             #### Observations for {selected_species_tab4}:
