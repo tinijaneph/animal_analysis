@@ -1,0 +1,144 @@
+AnimalName,Symptom,SymptomCount,DangerRate,OverallDangerRate,RelativeRisk
+Birds,Diarrhea,7,1.0,1.0,1.0
+Birds,Vomiting,5,1.0,1.0,1.0
+Birds,Weight loss,5,1.0,1.0,1.0
+Birds,Pains,5,1.0,1.0,1.0
+Birds,Coughing,6,1.0,1.0,1.0
+Birds,Fever,5,1.0,1.0,1.0
+Birds,Weakness,8,1.0,1.0,1.0
+Birds,Loss of appetite,7,1.0,1.0,1.0
+Birds,Lethargy,5,1.0,1.0,1.0
+Buffaloes,Vomiting,11,1.0,0.9147286821705426,1.0932203389830508
+Buffaloes,Lethargy,18,1.0,0.9147286821705426,1.0932203389830508
+Buffaloes,Dyspnea,11,1.0,0.9147286821705426,1.0932203389830508
+Buffaloes,Death,6,1.0,0.9147286821705426,1.0932203389830508
+Buffaloes,Pains,7,1.0,0.9147286821705426,1.0932203389830508
+Buffaloes,Lameness,5,1.0,0.9147286821705426,1.0932203389830508
+Buffaloes,Fever,43,0.9767441860465116,0.9147286821705426,1.0677966101694916
+Buffaloes,Coughing,30,0.9333333333333333,0.9147286821705426,1.0203389830508476
+Buffaloes,Sneezing,15,0.9333333333333333,0.9147286821705426,1.0203389830508476
+Buffaloes,Weight loss,26,0.8846153846153846,0.9147286821705426,0.9670795306388527
+Buffaloes,Depression,17,0.8823529411764706,0.9147286821705426,0.9646061814556331
+Buffaloes,Difficulty in breathing,7,0.8571428571428571,0.9147286821705426,0.937046004842615
+Buffaloes,Weakness,20,0.85,0.9147286821705426,0.9292372881355933
+Buffaloes,Anorexia,13,0.8461538461538461,0.9147286821705426,0.92503259452412
+Buffaloes,Skin rashes,6,0.8333333333333334,0.9147286821705426,0.9110169491525425
+Buffaloes,Nasal discharge,17,0.8235294117647058,0.9147286821705426,0.9002991026919243
+Buffaloes,Loss of appetite,11,0.8181818181818182,0.9147286821705426,0.8944530046224962
+Buffaloes,Anemia,5,0.8,0.9147286821705426,0.8745762711864408
+Buffaloes,Diarrhea,25,0.8,0.9147286821705426,0.8745762711864408
+Buffaloes,Dehydration,6,0.6666666666666666,0.9147286821705426,0.7288135593220338
+Buffaloes,Pain,5,0.6,0.9147286821705426,0.6559322033898305
+Cat,Fever,7,1.0,1.0,1.0
+Cat,Loss of  appetite,5,1.0,1.0,1.0
+Cat,Vomiting,11,1.0,1.0,1.0
+Cat,Weight loss,11,1.0,1.0,1.0
+Cat,Diarrhea,7,1.0,1.0,1.0
+Cat,Pain,5,1.0,1.0,1.0
+Cat,Lethargy,6,1.0,1.0,1.0
+Cattle,Fever,13,1.0,1.0,1.0
+Chicken,Loss of appetite,5,0.6,0.38461538461538464,1.5599999999999998
+Chicken,Diarrhea,9,0.4444444444444444,0.38461538461538464,1.1555555555555554
+Deer,Fever,9,1.0,1.0,1.0
+Deer,Drooping ears,6,1.0,1.0,1.0
+Deer,Drooling,14,1.0,1.0,1.0
+Deer,Wasting,13,1.0,1.0,1.0
+Deer,Listlessness,13,1.0,1.0,1.0
+Deer,Stumbling,12,1.0,1.0,1.0
+Deer,Urination problem,7,1.0,1.0,1.0
+Deer,Sudden death,5,1.0,1.0,1.0
+Deer,High temperature,5,1.0,1.0,1.0
+Deer,Difficulty breating,5,1.0,1.0,1.0
+Deer,Weight loss,5,1.0,1.0,1.0
+Deer,Trembling,5,1.0,1.0,1.0
+Deer,Depression,6,1.0,1.0,1.0
+Dog,Fever,16,1.0,1.0,1.0
+Dog,Diarrhea,11,1.0,1.0,1.0
+Dog,Vomiting,6,1.0,1.0,1.0
+Dog,Weight loss,8,1.0,1.0,1.0
+Dog,Coughing,9,1.0,1.0,1.0
+Dog,Lethargy,9,1.0,1.0,1.0
+Dog,Poor appetite,5,1.0,1.0,1.0
+Donkey,Dull ness,5,1.0,1.0,1.0
+Donkey,Weight loss,5,1.0,1.0,1.0
+Donkey,Fetopelvic dispropotion,7,1.0,1.0,1.0
+Donkey,Uteria inertia,7,1.0,1.0,1.0
+Donkey,Malpresentation,6,1.0,1.0,1.0
+Donkey,Death,7,1.0,1.0,1.0
+Donkey,Pains,7,1.0,1.0,1.0
+Donkey,Loss of appetite,10,1.0,1.0,1.0
+Duck,Vomiting,11,1.0,1.0,1.0
+Duck,Diarrhea,14,1.0,1.0,1.0
+Duck,Fever,19,1.0,1.0,1.0
+Duck,Weight loss,14,1.0,1.0,1.0
+Duck,Coughing,10,1.0,1.0,1.0
+Duck,Lethargy,11,1.0,1.0,1.0
+Duck,Poor appetite,5,1.0,1.0,1.0
+Duck,Loss of  appetite,7,1.0,1.0,1.0
+Elephant,Pain,8,1.0,1.0,1.0
+Elephant,Diarrhea,14,1.0,1.0,1.0
+Elephant,Weight loss,10,1.0,1.0,1.0
+Elephant,Nasal discharge,5,1.0,1.0,1.0
+Elephant,Vomiting,8,1.0,1.0,1.0
+Elephant,Lethargy,6,1.0,1.0,1.0
+Elephant,Fever,19,1.0,1.0,1.0
+Elephant,Loss of appetite,8,1.0,1.0,1.0
+Fowl,Vomiting,8,1.0,1.0,1.0
+Fowl,Loss of appetite,9,1.0,1.0,1.0
+Fowl,Pain,16,1.0,1.0,1.0
+Fowl,Fever,23,1.0,1.0,1.0
+Fowl,Diarrhea,13,1.0,1.0,1.0
+Fowl,Weakness,6,1.0,1.0,1.0
+Fowl,Weight loss,12,1.0,1.0,1.0
+Goat,Fever,13,1.0,1.0,1.0
+Goat,Weakness,5,1.0,1.0,1.0
+Goat,Weight loss,5,1.0,1.0,1.0
+Goat,Pain,8,1.0,1.0,1.0
+Hamster,Diarrhea,6,1.0,1.0,1.0
+Hamster,Fever,9,1.0,1.0,1.0
+Hamster,Pain,6,1.0,1.0,1.0
+Horse,Fever,9,1.0,1.0,1.0
+Horse,Depression,6,1.0,1.0,1.0
+Lion,Fever,7,1.0,1.0,1.0
+Lion,Weight loss,6,1.0,1.0,1.0
+Monkey,Anorexia,6,1.0,0.9285714285714286,1.0769230769230769
+Monkey,Lethargy,6,1.0,0.9285714285714286,1.0769230769230769
+Monkey,Dyspnea,11,1.0,0.9285714285714286,1.0769230769230769
+Monkey,Death,5,1.0,0.9285714285714286,1.0769230769230769
+Monkey,Coughing,19,0.9473684210526315,0.9285714285714286,1.020242914979757
+Monkey,Fever,12,0.9166666666666666,0.9285714285714286,0.9871794871794871
+Monkey,Weight loss,9,0.8888888888888888,0.9285714285714286,0.9572649572649572
+Monkey,Nasal discharge,8,0.875,0.9285714285714286,0.9423076923076923
+Monkey,Sneezing,7,0.8571428571428571,0.9285714285714286,0.923076923076923
+Pig,Coughing,5,1.0,1.0,1.0
+Pig,Weight loss,12,1.0,1.0,1.0
+Pig,Fever,22,1.0,1.0,1.0
+Pig,Lameness,7,1.0,1.0,1.0
+Pig,Swelling,6,1.0,1.0,1.0
+Pig,Loss of appetite,11,1.0,1.0,1.0
+Pig,Diarrhea,10,1.0,1.0,1.0
+Pig,Lethargy,5,1.0,1.0,1.0
+Pig,Depression,7,1.0,1.0,1.0
+Pig,Death,20,1.0,1.0,1.0
+Pig,Dullness,5,1.0,1.0,1.0
+Pig,Pains,20,1.0,1.0,1.0
+Sheep,Dullness,7,1.0,0.990909090909091,1.0091743119266054
+Sheep,Fever,38,1.0,0.990909090909091,1.0091743119266054
+Sheep,Depression,15,1.0,0.990909090909091,1.0091743119266054
+Sheep,Weight loss,21,1.0,0.990909090909091,1.0091743119266054
+Sheep,Anorexia,9,1.0,0.990909090909091,1.0091743119266054
+Sheep,Weakness,9,1.0,0.990909090909091,1.0091743119266054
+Sheep,Loss of appetite,15,1.0,0.990909090909091,1.0091743119266054
+Sheep,Diarrhea,13,1.0,0.990909090909091,1.0091743119266054
+Sheep,Lameness,12,1.0,0.990909090909091,1.0091743119266054
+Sheep,Swelling,11,1.0,0.990909090909091,1.0091743119266054
+Sheep,Blindness,9,1.0,0.990909090909091,1.0091743119266054
+Sheep,Coughing,5,1.0,0.990909090909091,1.0091743119266054
+Sheep,Lethargy,5,1.0,0.990909090909091,1.0091743119266054
+Sheep,Death,24,1.0,0.990909090909091,1.0091743119266054
+Sheep,Pains,31,1.0,0.990909090909091,1.0091743119266054
+Tiger,Pains,14,1.0,1.0,1.0
+Tiger,Malpresentation,13,1.0,1.0,1.0
+Tiger,Death,13,1.0,1.0,1.0
+Tiger,Fetopelvic dispropotion,12,1.0,1.0,1.0
+Tiger,Uteria inertia,12,1.0,1.0,1.0
