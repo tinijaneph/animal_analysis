@@ -378,6 +378,12 @@ with tab2:
         )
         
         st.plotly_chart(fig, use_container_width=True)
+        st.markdown("""
+        #### Interpretation:
+        - The correlation coefficient is **0**, indicating **no linear relationship** between the number of symptoms (**Symptom Count**) and the likelihood of a dangerous condition.
+        - This means that having more symptoms does not necessarily increase the likelihood of a dangerous condition.
+        - Further analysis should focus on **specific symptoms** or combinations of symptoms, as they may be more predictive of danger than the total number of symptoms.
+        """)
     else:
         st.warning("No data available for symptom-danger correlation.")
     
