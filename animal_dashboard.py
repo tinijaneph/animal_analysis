@@ -250,7 +250,7 @@ with tab2:
             fig.add_trace(go.Bar(
                 x=species_danger_sorted['AnimalName'],
                 y=species_danger_sorted['DangerRate'],
-                marker_color=[danger_color] * len(species_danger_sorted),
+                marker_color=px.colors.sequential.Reds[::-1],  # Use a red color scale
                 name='Danger Rate',
                 error_y=dict(
                     type='data',
@@ -266,7 +266,8 @@ with tab2:
                     x=row['AnimalName'],
                     y=row['DangerRate'] + 0.05,
                     text=f"n={row['TotalCases']}",
-                    showarrow=False
+                    showarrow=False,
+                    font=dict(size=10, color="black")
                 )
             
             fig.update_layout(
@@ -274,7 +275,9 @@ with tab2:
                 xaxis_title="Animal Species",
                 yaxis_title="Proportion of Dangerous Cases",
                 yaxis=dict(range=[0, 1]),
-                height=500
+                height=500,
+                template="plotly_white",  # Use a clean template
+                margin=dict(l=50, r=50, t=80, b=50)
             )
             
             st.plotly_chart(fig, use_container_width=True)
@@ -302,7 +305,9 @@ with tab2:
                 fig.update_layout(
                     xaxis_title="Animal Species",
                     yaxis_title="Number of Symptoms",
-                    height=500
+                    height=500,
+                    template="plotly_white",  # Use a clean template
+                    margin=dict(l=50, r=50, t=80, b=50)
                 )
                 
                 st.plotly_chart(fig, use_container_width=True)
@@ -328,7 +333,9 @@ with tab2:
                 fig.update_layout(
                     xaxis_title="Animal Species",
                     yaxis_title="Average Number of Symptoms",
-                    height=500
+                    height=500,
+                    template="plotly_white",  # Use a clean template
+                    margin=dict(l=50, r=50, t=80, b=50)
                 )
                 
                 st.plotly_chart(fig, use_container_width=True)
@@ -349,7 +356,7 @@ with tab2:
             x='AnimalName',
             y='Correlation',
             color='Correlation',
-            color_continuous_scale=['#91BFDB', '#FFFFBF', '#FC8D59'],
+            color_continuous_scale=px.colors.sequential.Viridis,  # Use a better color scale
             title="Correlation Between Symptom Count and Dangerous Condition by Species"
         )
         
@@ -365,7 +372,9 @@ with tab2:
         fig.update_layout(
             xaxis_title="Animal Species",
             yaxis_title="Correlation Coefficient",
-            height=400
+            height=400,
+            template="plotly_white",  # Use a clean template
+            margin=dict(l=50, r=50, t=80, b=50)
         )
         
         st.plotly_chart(fig, use_container_width=True)
