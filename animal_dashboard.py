@@ -791,70 +791,17 @@ This interactive dashboard was created to explore animal health patterns and tre
 It analyzes a comprehensive dataset of animal symptoms and conditions to identify key risk factors and species-specific patterns.
 """)
 
-# Download section for reports
-st.sidebar.header("Download Reports")
-st.sidebar.markdown("Generate and download reports with key findings:")
-
-report_type = st.sidebar.selectbox(
-    "Select report type:",
-    ["Overall Summary", "Species-Specific Analysis", "Symptom Risk Analysis"]
-)
-
-    # This would typically generate a report file
-
-# Generate a sample PDF report
-def generate_pdf_report(report_type):
-    from io import BytesIO
-    from reportlab.pdfgen import canvas
-
-    # Create a PDF buffer
-    buffer = BytesIO()
-
-    # Create a PDF object
-    pdf = canvas.Canvas(buffer)
-
-    # Add content to the PDF
-    pdf.drawString(100, 750, f"{report_type} Report")
-    pdf.drawString(100, 730, "This is a sample report generated for the Animal Health Patterns Explorer.")
-    pdf.drawString(100, 710, "Replace this content with actual data and analysis.")
-
-    # Save the PDF
-    pdf.showPage()
-    pdf.save()
-
-    # Get the PDF content
-    buffer.seek(0)
-    return buffer.getvalue()
-
-# Download section for reports
-st.sidebar.header("Download Reports")
-st.sidebar.markdown("Generate and download reports with key findings:")
-
-report_type = st.sidebar.selectbox(
-    "Select report type:",
-    ["Overall Summary", "Species-Specific Analysis", "Symptom Risk Analysis"]
-)
-
-if st.sidebar.button("Generate Report"):
-    st.sidebar.success("Report generated! Click below to download.")
-    
-    # Generate the PDF report
-    pdf_content = generate_pdf_report(report_type)
-    
-    # Enable the download button
-    st.sidebar.download_button(
-        label="Download Report",
-        data=pdf_content,
-        file_name=f"{report_type.lower().replace(' ', '_')}_report.pdf",
-        mime="application/pdf"
-    )
+# report_type = st.sidebar.selectbox(
+#     "Select report type:",
+#     ["Overall Summary", "Species-Specific Analysis", "Symptom Risk Analysis"]
+# )
     
 
-# About section
-st.sidebar.markdown("---")
-st.sidebar.info("""
-**Project: Exploring Animal Health Patterns**
+# # About section
+# st.sidebar.markdown("---")
+# st.sidebar.info("""
+# **Project: Exploring Animal Health Patterns**
 
-This project analyzes the "Animal Condition Classification Dataset" 
-to identify patterns and trends in animal health conditions across different species.
-""")
+# This project analyzes the "Animal Condition Classification Dataset" 
+# to identify patterns and trends in animal health conditions across different species.
+# """)
