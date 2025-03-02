@@ -408,12 +408,31 @@ with tab2:
         )
         
         st.plotly_chart(fig, use_container_width=True)
-        st.markdown("""
-        #### Interpretation:
-        - The correlation coefficient is **0**, indicating **no linear relationship** between the number of symptoms (**Symptom Count**) and the likelihood of a dangerous condition.
-        - This means that having more symptoms does not necessarily increase the likelihood of a dangerous condition.
-        - Further analysis should focus on **specific symptoms** or combinations of symptoms, as they may be more predictive of danger than the total number of symptoms.
-        """)
+        if not corr_data.empty:
+            avg_corr = corr_data['Correlation'].mean()
+            max_corr = corr_data['Correlation'].max()
+            min_corr = corr_data['Correlation'].min()
+            max_species = corr_data.loc[corr_data['Correlation'].idxmax(), 'AnimalName']
+            min_species = corr_data.loc[corr_data['Correlation'].idxmin(), 'AnimalName']
+            
+            correlation_interpretation = "weak" if abs(avg_corr) < 0.3 else "moderate" if abs(avg_corr) < 0.6 else "strong"
+            
+            st.markdown(f"""
+            #### Interpretation:
+            - The average correlation coefficient is **{avg_corr:.2f}**, indicating a **{correlation_interpretation} {'' if avg_corr == 0 else 'positive' if avg_corr > 0 else 'negative'} relationship** between symptom count and danger across all species
+            - **{max_species}** shows the strongest positive correlation ({max_corr:.2f}), where more symptoms generally indicate higher danger
+            - **{min_species}** shows the strongest negative correlation ({min_corr:.2f}), where more symptoms actually correlate with lower danger
+            - The variation across species suggests that symptom count alone is not a reliable universal predictor of danger
+            - Focus should be on **specific symptoms** or combinations, as they may be more predictive than total symptom count
+            """)
+        else:
+            st.markdown("""
+            #### Interpretation:
+            - The correlation coefficient indicates the relationship between symptom count and danger
+            - A value near zero suggests no linear relationship between symptom count and danger
+            - This means that having more symptoms does not necessarily increase the likelihood of a dangerous condition
+            - Further analysis should focus on specific symptoms or combinations rather than just symptom count
+            """)
     else:
         st.warning("No data available for symptom-danger correlation.")
     
@@ -437,13 +456,37 @@ with tab2:
                      f"{highest_corr:.2f} correlation")
     
     with col2:
-        st.markdown("""
-        #### Observations:
-        - Some species have significantly higher rates of dangerous conditions
-        - The relationship between symptom count and danger varies by species
-        - For some species, more symptoms strongly correlate with dangerous conditions
-        - For others, the number of symptoms is less predictive of danger
-        """)
+        if 'species_danger_sorted' in locals() and not species_danger_sorted.empty and 'corr_data' in locals() and not corr_data.empty:
+            # Extract specific insights
+            highest_risk = species_danger_sorted.iloc[0]['AnimalName']
+            highest_risk_rate = species_danger_sorted.iloc[0]['DangerRate']
+            lowest_risk = species_danger_sorted.iloc[-1]['AnimalName']
+            lowest_risk_rate = species_danger_sorted.iloc[-1]['DangerRate']
+            
+            # Correlation insights
+            positive_corr = corr_data[corr_data['Correlation'] > 0.3].shape[0]
+            negative_corr = corr_data[corr_data['Correlation'] < -0.3].shape[0]
+            strong_corr_species = corr_data.iloc[0]['AnimalName'] if abs(corr_data.iloc[0]['Correlation']) > 0.3 else None
+            
+            # Risk difference calculation
+            risk_ratio = highest_risk_rate / max(lowest_risk_rate, 0.001)  # Avoid division by zero
+            
+            st.markdown(f"""
+            #### Observations:
+            - **{highest_risk}** shows the highest danger rate at **{highest_risk_rate:.1%}**, which is **{risk_ratio:.1f}x** higher than **{lowest_risk}** ({lowest_risk_rate:.1%})
+            - {positive_corr} species show a positive correlation between symptom count and danger (more symptoms = higher risk)
+            - {negative_corr} species show a negative correlation (more symptoms = lower risk)
+            - {"For **" + strong_corr_species + "**, symptom count is a strong predictor of danger" if strong_corr_species else "No species shows a strong correlation between symptom count and danger"}
+            - The data suggests different risk assessment models may be needed for different species
+            """)
+        else:
+            st.markdown("""
+            #### Observations:
+            - Some species have significantly higher rates of dangerous conditions
+            - The relationship between symptom count and danger varies by species
+            - For some species, more symptoms correlate with dangerous conditions
+            - For others, the number of symptoms is less predictive of danger
+            """)
 
 # Tab 3: Symptom Combinations
 with tab3:
@@ -649,13 +692,47 @@ with tab3:
                                  f"{max_connections} connections")
             
             with col2:
-                st.markdown("""
-                #### Observations:
-                - Certain symptom combinations are much more likely to indicate dangerous conditions
-                - The network visualization reveals clusters of symptoms that frequently co-occur
-                - Central symptoms in the network often serve as important indicators
-                - Some symptoms are more "connected" and frequently appear with many other symptoms
-                """)
+                if 'top_combinations' in locals() and not top_combinations.empty:
+                    # Extract specific insights
+                    top_combo = top_combinations.iloc[0]['Combination']
+                    top_combo_rate = top_combinations.iloc[0]['DangerRate']
+                    top_combo_count = top_combinations.iloc[0]['Count']
+                    
+                    # Get combination type stats
+                    combo_type_counts = filtered_combinations['CombinationType'].value_counts()
+                    most_common_type = combo_type_counts.idxmax() if not combo_type_counts.empty else "N/A"
+                    
+                    # Network insights
+                    network_insight = ""
+                    if 'G' in locals() and len(G.nodes) > 0:
+                        most_connected = None
+                        max_connections = 0
+                        for node in G.nodes():
+                            connections = len(list(G.neighbors(node)))
+                            if connections > max_connections:
+                                max_connections = connections
+                                most_connected = node
+                        if most_connected:
+                            network_insight = f"\n- The network analysis shows **'{most_connected}'** is the most connected symptom ({max_connections} connections), suggesting it's a central indicator"
+                    
+                    # Calculate danger threshold
+                    high_danger_combos = filtered_combinations[filtered_combinations['DangerRate'] > 0.7].shape[0]
+                    
+                    st.markdown(f"""
+                    #### Observations:
+                    - The combination **'{top_combo}'** has the highest danger rate ({top_combo_rate:.1%}) among combinations with at least {min_occurrences} occurrences
+                    - {high_danger_combos} symptom combinations have a danger rate above 70%
+                    - {most_common_type} combinations are most common in the filtered dataset
+                    - When monitoring for dangerous conditions, combinations provide more predictive power than individual symptoms{network_insight}
+                    """)
+                else:
+                    st.markdown("""
+                    #### Observations:
+                    - Certain symptom combinations are much more likely to indicate dangerous conditions
+                    - The network visualization reveals clusters of symptoms that frequently co-occur
+                    - Central symptoms in the network often serve as important indicators
+                    - Some symptoms are more "connected" and frequently appear with many other symptoms
+                    """)
         else:
             st.warning(f"No combinations found with at least {min_occurrences} occurrences for the selected type.")
     else:
@@ -805,13 +882,44 @@ with tab4:
                      f"{relative_risk:.1f}x higher risk")
     
     with col2:
-        st.markdown(f"""
-        #### Observations for {selected_species_tab4}:
-        - Each species has a unique symptom profile
-        - Some symptoms occur at much higher rates in certain species
-        - The symptoms that predict danger vary significantly by species
-        - Understanding species-specific patterns helps with targeted monitoring
-        """)
+        if not distinctive_symptoms.empty and not species_danger_indicators.empty:
+            # Extract specific insights for the selected species
+            most_distinctive = distinctive_symptoms.iloc[0]['Symptom']
+            distinctiveness_score = distinctive_symptoms.iloc[0]['Distinctiveness']
+            proportion = distinctive_symptoms.iloc[0]['PropWithinSpecies']
+            
+            # Danger indicators
+            top_danger = species_danger_indicators.iloc[0]['Symptom']
+            relative_risk = species_danger_indicators.iloc[0]['RelativeRisk']
+            danger_rate = species_danger_indicators.iloc[0]['DangerRate']
+            
+            # Count symptoms with high relative risk
+            high_risk_symptoms = species_danger_indicators[species_danger_indicators['RelativeRisk'] > 2].shape[0]
+            
+            # Additional insights from heatmap if available
+            heatmap_insight = ""
+            if 'symptom_species_danger' in locals() and not symptom_species_danger.empty:
+                species_data = symptom_species_danger[symptom_species_danger['AnimalName'] == selected_species_tab4]
+                if not species_data.empty:
+                    max_danger_symptom = species_data.sort_values('DangerRate', ascending=False).iloc[0]['Symptom']
+                    max_danger_rate = species_data.sort_values('DangerRate', ascending=False).iloc[0]['DangerRate']
+                    heatmap_insight = f"\n- Among the selected symptoms, '{max_danger_symptom}' shows the highest danger rate ({max_danger_rate:.1%}) for {selected_species_tab4}"
+            
+            st.markdown(f"""
+            #### Observations for {selected_species_tab4}:
+            - '{most_distinctive}' is **{distinctiveness_score:.1f}x** more common in {selected_species_tab4} than in other species and appears in {proportion:.1%} of cases
+            - '{top_danger}' is the strongest indicator of danger with {relative_risk:.1f}x higher risk and a {danger_rate:.1%} danger rate when present
+            - {high_risk_symptoms} symptoms show at least 2x higher risk of danger when present
+            - This species shows a unique symptom profile that requires targeted monitoring{heatmap_insight}
+            """)
+        else:
+            st.markdown(f"""
+            #### Observations for {selected_species_tab4}:
+            - Each species has a unique symptom profile
+            - Some symptoms occur at much higher rates in certain species
+            - The symptoms that predict danger vary significantly by species
+            - Understanding species-specific patterns helps with targeted monitoring
+            """)
 
 # Footer with additional information
 st.markdown("---")
